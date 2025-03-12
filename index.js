@@ -6,7 +6,7 @@ app.get("/sum", function(req,res){
     const a = parseInt(req.query.a);
     const b = parseInt(req.query.b);
     const sum = a + b;
-    res.send(sum.toString());
+    res.json(sum.toString());
 });
 
 app.listen(3000);
